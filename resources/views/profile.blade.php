@@ -8,6 +8,7 @@
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 50px;
+            background-color:rgb(3, 117, 189);
         }
         .profile-container {
             display: flex;
