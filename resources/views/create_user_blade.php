@@ -6,7 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-<form action="{{ route('user.store') }}" method="POST">
+<label for="id_kelas">Kelas:</label><br>
+<select name="kelas_id" id="kelas_id"required>
+    @foreach ($kelas as $kelasItem)
+    <option value="{{$kelasItem->id}}">{{$kelasItem->nama_kelas}}</option>
+    @endforeach
+</select>
+<!-- <form action="{{ route('user.store') }}" method="POST">
         @crsf
         <label for="nama">Nama : </label>
         <input type="text" id="nama" name="nama"><br>
@@ -18,6 +24,6 @@
         <input type="text" id="kelas" name="kelas"><br>
 
         <button type="submit">Submit</button>
-    </form>
+    </form> -->
 </body>
 </html>
