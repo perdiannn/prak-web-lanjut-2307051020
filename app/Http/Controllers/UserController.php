@@ -30,16 +30,22 @@ class UserController extends Controller
     //         'kelas' => $request->input('kelas'),
     //         'npm' => $request->input('npm'),
     //     ];
-    //     return view('profile', $data);
+    //     return view('profile', compact('nama', 'kelas', 'npm'));
     // }
 
-    public function store()
+    public function store(Request $request)
     {
         $validatedData = $request->validate([
             'nama' => 'required|string|max:255',
             'npm' => 'required|string|max:255',
             'kelas_id' => 'required|exists:kelas,id',
         ]);
+
+        $user = new User_Model();
+        $user->nama = $request->input('nama');
+        $user->kelas = $request->input('kelas');
+        $user->npm = $request->input('npm');
+        $user->save();
 
         $user = User_Model::create($validatedData);
 
