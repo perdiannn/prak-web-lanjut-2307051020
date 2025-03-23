@@ -1,0 +1,90 @@
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, table, th, td {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #940d0d, #2575fc);
+    color: #333;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1000px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #007bff;
+    color: rgb(255, 255, 255);
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #fffb05db;
+    transition: 0.3s;
+}
+
+/* Pesan sukses */
+.success-message {
+    color: #28a745;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px;
+    background: rgba(40, 167, 69, 0.2);
+    border-radius: 5px;
+}
+
+/* Tombol */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
