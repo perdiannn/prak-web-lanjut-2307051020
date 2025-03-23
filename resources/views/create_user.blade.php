@@ -175,6 +175,7 @@
 @endsection -->
 
 <!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -182,8 +183,12 @@
     <title>Document</title>
 </head>
 <body>
+read-data
 <form action="{{ route('user.store') }}" method="POST">
         @crsf
+    <form action="{{ route('user.store') }}" method="POST">
+        @csrf
+        main
         <label for="nama">Nama : </label>
         <input type="text" id="nama" name="nama"><br>
 
@@ -196,4 +201,5 @@
         <button type="submit">Submit</button>
     </form>
 </body>
-</html> -->
+</html> 
+</html>
