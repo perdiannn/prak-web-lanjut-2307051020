@@ -83,9 +83,9 @@
     <div class="profile-container">
         <div class="profile-pic">&#128100;</div>
         <div class="profile-info">
-            <div class="info-box">Nama : FERDIAN</div>
-            <div class="info-box">NPM : 2307051020</div>
-            <div class="info-box">Kelas : D3 MI</div>
+            <div class="info-box">FERDIAN</div>
+            <div class="info-box">2307051020</div>
+            <div class="info-box">D3 MI</div>
         </div>
     </div>
 </body>
